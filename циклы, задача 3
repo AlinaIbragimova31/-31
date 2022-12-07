@@ -1,0 +1,23 @@
+using System; 
+
+namespace ConsoleApplication1 
+{ 
+ class Program 
+ { 
+ static void Main(string[] args) 
+ { 
+ Console.Write("height: "); 
+ int stars = int.Parse(Console.ReadLine()); 
+ int emptiness = stars; 
+ for (int j = 0; j < stars; j++) 
+ { 
+ for (int q = 1; j < stars;j++, q += 2) 
+ { 
+ Console.Write(new string(' ', —emptiness)); 
+ Console.Write(new string('*', q)); 
+ Console.WriteLine(); 
+ } 
+ } 
+ } 
+ } 
+}
